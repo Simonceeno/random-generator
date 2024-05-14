@@ -1,0 +1,149 @@
+:root{
+--dark-red: #3F1C21;
+--easy-beige: #EAE3D3;
+--red: #98333E;
+
+}
+
+/* RESET STYLE */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html{
+box-sizing: border-box;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* general style */
+body{
+background-image: url('data:image/svg+xml,<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" overflow="hidden" ><g><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(0, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(9, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(18, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(27, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(36, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(45, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(54, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(63, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(72, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(81, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(90, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(99, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(108, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(117, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(126, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(135, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(144, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(153, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(162, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(171, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(180, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(189, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(198, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(207, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(216, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(225, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(234, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(243, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(252, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(261, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(270, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(279, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(288, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(297, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(306, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(315, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(324, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(333, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2355b8ba" transform-origin="50 50" transform="rotate(342, 0, 0)" /><path d="M 50 50 L 250 50 L 247.53766811902756 81.28689300804618" fill="%2388cdcf" transform-origin="50 50" transform="rotate(351, 0, 0)" /></g></svg>');
+width: 100%;
+height: 100%;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+/* banner */
+.banner{
+    display: flex;
+    justify-content: center;
+    padding:75px 2px 25px 2px;
+}
+
+#logo{
+max-width: 35vw;
+}
+
+/* card */
+.card-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+.flip-card{
+    background-color: var(--red);
+    background-image: url(/random-generator/resources/images/pattern.png);
+    background-repeat: repeat;
+    background-size: contain;
+    border-radius: 25px;
+    border: 14px solid var(--easy-beige);
+    height: 430px;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* temporaneamente nascosto per occuparmi della parte frontale!! */
+.flip-card-back{
+    display: none; /* <-- CAMBIARE IN FLEX!!!*/  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* bottom */
+.bottom__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 50px 10px 50px;
+}
+
+/* typography */
+.formatting{
+    text-align: center;
+    font-family: 'inika', Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 40px;
+    color: var(--dark-red);
+}
+
+h3{
+    font-size: 20px;
+    color: var(--dark-red);
+}
+
+h4{
+    font-size: 18px;
+    color: var(--easy-beige);
+}
+
+p{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--easy-beige);
+}
+
+
+
