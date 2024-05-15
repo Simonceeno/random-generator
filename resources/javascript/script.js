@@ -1,3 +1,4 @@
+/*
 let card = document.querySelector(".card")
 let frontCard = document.querySelector(".front-card")
 let backCard = document.querySelector(".back-card")
@@ -8,4 +9,4 @@ card.style.transform = "rotateY(180deg)";
 backCard.style.display = "flex"
 }
 
-card.addEventListener("click", flipCard);
+card.addEventListener("click", flipCard); */
