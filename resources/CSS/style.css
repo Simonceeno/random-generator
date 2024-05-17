@@ -74,12 +74,25 @@ background-repeat: no-repeat;
 }
 
 #logo{
-max-width: 35vw;
+max-width: 30rem;
+}
+
+/* logo media queries */
+@media only screen and (max-width: 510px) {
+    #logo{
+        max-width: 25rem;
+        }
+}
+
+@media only screen and (max-width: 415px) {
+    #logo{
+        max-width: 20rem;
+        }
 }
 
 /* card */
 
-/* This is just to center the card in the page */
+/* Centering the card in the page */
 .card-section{ 
     width: 100%;
     height: 100%;
@@ -93,6 +106,7 @@ max-width: 35vw;
     width: 190px;
 }
 
+/* glowing animation keyframes */
 @keyframes glowing{
     0% {box-shadow:0px 0px 12px 12px var(--gold-aura);}
     100% {box-shadow:0px 0px 8px 8px var(--gold-aura);}
@@ -112,7 +126,7 @@ max-width: 35vw;
     outline-offset: 2px;
 }
 
-/* card design */
+/* card general design */
 .card-design{
     height: 100%;
     background-color: var(--red);
@@ -135,29 +149,29 @@ max-width: 35vw;
     cursor: pointer;
 }
 
+/* centering and fixing the "Your random quote is:" text */
 .your-quote{
     position: fixed;
     top: 20px;
 }
 
 
-/* card parts */
-
-.front-card{
+/* card faces */
+.front-card{  /*<-- The card deck design*/
     background-image: url(/random-generator/resources/images/pattern.png);
     background-repeat: repeat;
     background-size: contain;
 }
 
-.back-card{
+.back-card{ /*<-- the entire card quote part*/
     display:none;
     background-color: var(--red);
     justify-content: center;
     perspective: 1000px;
 }
 
+/* the quote-only part */
 .quote-box{
-    top:20px;
     width:100%;
     height: 100%;
     display: flex;
@@ -167,6 +181,12 @@ max-width: 35vw;
     align-items: center;
     flex-direction: column;
     user-select: none;
+}
+/* a little trick to keep the longest quotes in the center without overlapping*/
+.hidden-space{
+    width:100%;
+    height:30px;
+    background-color: transparent;
 }
 
 .space{
@@ -184,6 +204,7 @@ max-width: 35vw;
     padding: 50px 10px 20px 10px;
 }
 
+/* toggle classes to switch in js */
 .display{
     display: flex;
 }
@@ -192,6 +213,19 @@ max-width: 35vw;
     display: none;
 }
 
+/* Classes to try flip animation toggle (not working)
+.flipfront{
+    transition: "transform 1500ms";
+    transform: "rotateY(180deg)";
+    transform-style: preserve-3d;
+}
+
+.flipback{
+    transition: "transform 1500ms";
+    transform: "rotateY(-180deg)";
+    transform-style: preserve-3d;
+}
+*/
 
 /* typography */
 .formatting{
@@ -200,12 +234,14 @@ max-width: 35vw;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     color: var(--dark-red);
 }
 
 h3{
-    font-size: 20px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: var(--dark-red);
 }
 
@@ -217,7 +253,7 @@ h4{
 }
 
 p{
-    font-size: 18px;
+    font-size: 1.13rem;
     font-weight: bold;
     color: var(--easy-beige);
     line-height: 20px;
