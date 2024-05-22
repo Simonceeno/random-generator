@@ -25,15 +25,15 @@
         <section class="card-section">
 
             <div class="maincontainer">
-                <div class="cardbox" id="card">
-                    <div class="front-card card-design formatting">
+                <div class="cardbox" id="card" tabindex=0 aria-label="Card to flip">
+                    <div class="front-card card-design formatting" aria-hidden="true">
                     </div>
                     <div class="back-card card-design">
                         <div class="quote-box">
                             <h4 class="formatting">Your random</h4> 
                             <h4 class="formatting space">quote is:</h4>
                             <div class="hidden-space"></div>
-                            <p id="quote" class="formatting">Random quote here. Lorem ipsum</p>
+                            <p id="quote" class="formatting" tabindex=1>Random quote here. Lorem ipsum</p>
                         </div>
                     </div>
                 </div>
@@ -41,14 +41,14 @@
 
         </section>
 
-        <section class="bottom">
+        <footer class="bottom">
 
             <div class="bottom__text">
                 <h2 class="formatting">Flip the card for a random quote!</h2>
                 <h3 class="formatting">This is a random project by The Great <strong>Simone Gattullo</strong></h3>
             </div>
 
-        </section>
+        </footer>
 
         <script src="/random-generator/resources/javascript/script.js" async defer></script>
     </body>
