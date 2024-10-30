@@ -6,7 +6,7 @@ This is a responsive philosophical quote generator presented as a fortune teller
 
 Go visit the preview of the project here:
 
-**[Design System page](https://simonceeno.github.io/design-system/)**
+**[Random frotune teller quote generator](https://simonceeno.github.io/random-generator/)**
 
 **ENJOY!**
 
